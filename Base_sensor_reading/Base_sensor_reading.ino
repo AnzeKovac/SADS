@@ -5,8 +5,8 @@
 #include <ArduinoJson.h> //From https://arduinojson.org/
 
 //Wifi Settings
-const char* ssid = "Agilcon";
-const char* password = "Agilcon2018";
+const char* ssid = "SSID";
+const char* password = "Pass";
 
 //Salesforce User Settings
 const char* sfUsername = "anze@sads.fri";
@@ -128,7 +128,6 @@ void setup() {
   
   Serial.begin(115200);
   WiFi.begin(ssid,password);
-  pinMode(doorPin, INPUT);
   
   Serial.println("Waiting for connection");
   
